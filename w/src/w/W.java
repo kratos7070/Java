@@ -25,6 +25,15 @@ public class W {
        System.out.print("dijite el tamño de las filas");
        c= leer.nextInt(); 
        
+       
+       
+       if (c==0){
+           
+           
+           
+       }
+       
+       
        if ((c>2)&&(c==f)&&(c%2==1)&&(f%2==1)){
            
            int mat [][] =new int [f][c];
