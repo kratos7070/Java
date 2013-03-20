@@ -5,6 +5,8 @@ import java.util.*;
 public class LETRAK {
 
     
+
+    
     
     
     
@@ -23,6 +25,8 @@ public class LETRAK {
             letra_k[letra_k.length-2][c]=1;
             
         }
+        
+        
         
         
         for (f=0;f<letra_k.length-1;f++){

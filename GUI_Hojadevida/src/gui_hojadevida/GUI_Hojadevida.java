@@ -80,6 +80,8 @@ public class GUI_Hojadevida extends JFrame{
             cano.addItem(a);
             
             
+            
+            
         }
         
         
