@@ -26,7 +26,7 @@ public class barramarcheck extends JFrame {
         JMenuItem m13 = new JMenuItem ("Simple Plan");
         JMenuItem m14 = new JMenuItem ("Green Day");
         JmenuItem m15 = new JMenuItem ("The Machine Again");
-
+// http://www.adslzone.net/postp2050064.html
 
 // CREANDO MENUS
 
