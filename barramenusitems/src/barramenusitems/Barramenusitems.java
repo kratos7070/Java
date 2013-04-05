@@ -1,16 +1,23 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package barramarcheck;
+
 import javax.swing.*;
 import java.awt.*;
-public class barramarcheck extends JFrame {
+
+public class Barramarcheck extends   JFrame{
 
 
-    public barramarcheck () {
+    public Barramarcheck () {
 
         super ("barra de menus");
         setSize(500,550);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 // CREANDO ITEMS
 
-        JMenu m1 = new JMenu ();
+        JMenu mu1 = new JMenu ("Favoritos");
         JMenuItem m1 = new JMenuItem ("Metallica");
         JMenuItem m2 = new JMenuItem ("Iron Maiden");
         JMenuItem m3 = new JMenuItem ("Disturbed");
@@ -25,14 +32,17 @@ public class barramarcheck extends JFrame {
         JMenuItem m12 = new JMenuItem ("Mana");
         JMenuItem m13 = new JMenuItem ("Simple Plan");
         JMenuItem m14 = new JMenuItem ("Green Day");
-        JmenuItem m15 = new JMenuItem ("The Machine Again");
+        JMenuItem m15 = new JMenuItem ("The Machine Again");
 // http://www.adslzone.net/postp2050064.html
 
 // CREANDO MENUS
 
 
     JMenu menumetal = new JMenu ("Metal");
-	menumetal.add(m1);
+	
+     
+        menumetal.add(mu1);
+        mu1.add(m1);
 	menumetal.addSeparator();
 	menumetal.add(m2);
 	menumetal.addSeparator();
@@ -46,17 +56,18 @@ public class barramarcheck extends JFrame {
 	menurap.add(m5);
 	menurap.addSeparator();
 	menurap.add(m6);
+	
 
 	JMenu menugrunge = new JMenu ("Grunge");
 
 	menugrunge.add(m7);
 	menugrunge.addSeparator();
-	menugunge.add(m8);
+	menugrunge.add(m8);
 	menugrunge.addSeparator();
 	menugrunge.add(m9);
 
 
-	Jmenu menurock = new JMenu ("rock");
+	JMenu menurock = new JMenu ("rock");
 
 	menurock.add(m10);
 	menurock.addSeparator();
@@ -64,7 +75,7 @@ public class barramarcheck extends JFrame {
 	menurock.addSeparator();
 	menurock.add(m12);
 
-	Jmenu menupunk = new JMenu ("Punk");
+	JMenu menupunk = new JMenu ("Punk");
 
 	menupunk.add(m13);
 	menupunk.addSeparator();
@@ -73,7 +84,7 @@ public class barramarcheck extends JFrame {
 	menupunk.add(m15);
 
 
-	JMenubar mbar = new JMenubar ();
+	JMenuBar mbar = new JMenuBar ();
 
 	mbar.add(menumetal);
 	mbar.add(menurap);
@@ -90,7 +101,7 @@ public class barramarcheck extends JFrame {
 	add("North",mbar);
 	setJMenuBar(mbar);
 	pack();
-	SetVisible(true);
+	setVisible(true);
 
 
 
@@ -129,7 +140,7 @@ public class barramarcheck extends JFrame {
 
 
 
-		barramarcheck mj = new barramarcheck ();
+		Barramarcheck mj = new Barramarcheck ();
 
 
 
